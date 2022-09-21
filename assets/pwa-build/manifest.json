@@ -1,0 +1,38 @@
+{
+  "background_color": "#c1d2e2",
+  "description": "Aplicativo desenvolvido por estudantes do Senac, para a cadeira de Mobile",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Brisa Viagens",
+  "orientation": "any",
+  "short_name": "BrisaViagens",
+  "start_url": "/index.html",
+  "theme_color": "#f5fafa",
+  "categories": [],
+  "icons": [
+    {
+      "src": "images/Logo/android/mipmap-hdpi/brisa_viagens.png",
+      "type": "image/png",
+      "sizes": "71x71",
+      "purpose": "any"
+    },
+    {
+      "src": "images/Logo/android/mipmap-mdpi/brisa_viagens.png",
+      "type": "image/png",
+      "sizes": "89x89",
+      "purpose": "any"
+    },
+    {
+      "src": "images/Logo/android/mipmap-xhdpi/brisa_viagens.png",
+      "type": "image/png",
+      "sizes": "107x107",
+      "purpose": "any"
+    },
+    {
+      "src": "images/Logo/android/mipmap-xxxhdpi/brisa_viagens.png",
+      "type": "image/png",
+      "sizes": "142x142",
+      "purpose": "any"
+    }
+  ]
+}
