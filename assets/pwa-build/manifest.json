@@ -36,9 +36,9 @@
       "purpose": "any"
     },
     {
-      "src": "./images/avatar.png",
+      "src": "./images/Logo/avatar.png",
       "type": "image/png",
-      "sizes": "500x500",
+      "sizes": "512x512",
       "purpose": "any"
     }
   ]
