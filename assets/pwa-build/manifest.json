@@ -11,27 +11,33 @@
   "categories": [],
   "icons": [
     {
-      "src": "images/Logo/android/mipmap-hdpi/brisa_viagens.png",
+      "src": "./images/Logo/android/mipmap-hdpi/brisa_viagens.png",
       "type": "image/png",
       "sizes": "71x71",
       "purpose": "any"
     },
     {
-      "src": "images/Logo/android/mipmap-mdpi/brisa_viagens.png",
+      "src": "./images/Logo/android/mipmap-mdpi/brisa_viagens.png",
       "type": "image/png",
       "sizes": "89x89",
       "purpose": "any"
     },
     {
-      "src": "images/Logo/android/mipmap-xhdpi/brisa_viagens.png",
+      "src": "./images/Logo/android/mipmap-xhdpi/brisa_viagens.png",
       "type": "image/png",
       "sizes": "107x107",
       "purpose": "any"
     },
     {
-      "src": "images/Logo/android/mipmap-xxxhdpi/brisa_viagens.png",
+      "src": "./images/Logo/android/mipmap-xxxhdpi/brisa_viagens.png",
       "type": "image/png",
       "sizes": "142x142",
+      "purpose": "any"
+    },
+    {
+      "src": "./images/avatar.png",
+      "type": "image/png",
+      "sizes": "500x500",
       "purpose": "any"
     }
   ]
