@@ -15,6 +15,13 @@ self.addEventListener('install', event => {
         './assets/css/fontawesome-all.min.css',
 
         './assets/js/main.js',
+        './assets/js/breakpoints.min.js',
+        './assets/js/browser.min.js',
+        './assets/js/jquery.min.js',
+        './assets/js/jquery.scrollex.min.js',
+        './assets/js/jquery.scrolly.min.js',
+        './assets/js/util.js',
+        './assets/pwa-build/manifest.json',
 
         './assets/sass/main.scss',
         './images/banner.png',
@@ -27,6 +34,11 @@ self.addEventListener('install', event => {
         './images/pacotes/4.jpg',
         './images/pacotes/5.jpg',
         './images/pacotes/6.jpg',
+        './images/Logo/android/mipmap-hdpi/brisa_viagens.png',
+        './images/Logo/android/mipmap-mdpi/brisa_viagens.png',
+        './images/Logo/android/mipmap-xhdpi/brisa_viagens.png',
+        './images/Logo/android/mipmap-xxxhdpi/brisa_viagens.png',
+        './images/Logo/avatar.png'
         
       ]))
   );
