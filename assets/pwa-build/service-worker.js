@@ -38,7 +38,7 @@ self.addEventListener('install', event => {
         './images/Logo/android/mipmap-mdpi/brisa_viagens.png',
         './images/Logo/android/mipmap-xhdpi/brisa_viagens.png',
         './images/Logo/android/mipmap-xxxhdpi/brisa_viagens.png',
-        './images/Logo/avatar.png'
+        './images/Logo/avatar.png',
         
       ]))
   );
