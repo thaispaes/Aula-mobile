@@ -6,7 +6,8 @@
   "name": "Brisa Viagens",
   "orientation": "any",
   "short_name": "BrisaViagens",
-  "start_url": "/index.html",
+  "start_url": "./index.html",
+  "purpose": "any maskable",
   "theme_color": "#f5fafa",
   "categories": [],
   "icons": [
