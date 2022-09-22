@@ -19,12 +19,14 @@ self.addEventListener('install', event => {
         './assets/sass/main.scss',
         './images/banner.png',
         './images/nos.png',
-        'images/pacotes/1.jpg',
-        'images/pacotes/2.jpg',
-        'images/pacotes/3.jpg',
-        'images/pacotes/4.jpg',
-        'images/pacotes/5.jpg',
-        'images/pacotes/6.jpg',
+        './images/Logo/avatar.png',
+        './images/avatar.png',
+        './images/pacotes/1.jpg',
+        './images/pacotes/2.jpg',
+        './images/pacotes/3.jpg',
+        './images/pacotes/4.jpg',
+        './images/pacotes/5.jpg',
+        './images/pacotes/6.jpg',
         
       ]))
   );
