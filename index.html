@@ -10,6 +10,19 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="manifest" href="assets/pwa-build/manifest.json">
+	
+		<meta name="theme-color" content="#f5fafa"/>
+
+		<link rel="apple-touch-icon" href="./images/avatar.png">
+		<link rel="apple-touch-icon" sizes="29x29" href="./images/Logo/Assets.xcassets/AppIcon.appiconset/_/29.png">
+		<link rel="apple-touch-icon" sizes="40x40" href="./images/Logo/Assets.xcassets/AppIcon.appiconset/_/40.png">
+		<link rel="apple-touch-icon" sizes="57x57" href="./images/Logo/Assets.xcassets/AppIcon.appiconset/_/57.png">
+		<link rel="apple-touch-icon" sizes="80x80" href="./images/Logo/Assets.xcassets/AppIcon.appiconset/_/80.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="./images/Logo/Assets.xcassets/AppIcon.appiconset/_/180.png">
+		<link rel="apple-touch-icon" sizes="1024x1024" href="./images/Logo/Assets.xcassets/AppIcon.appiconset/_/1024.png">
+
+	
 	</head>
 	<body class="is-preload">
 
@@ -76,13 +89,13 @@
 							<div class="row">
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images\pacotes\4.jpg" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/pacotes/4.jpg" alt="" /></a>
 										<header>
 											<h3>Recife</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images\pacotes\3.jpg" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/pacotes/3.jpg" alt="" /></a>
 										<header>
 											<h3>Olinda</h3>
 										</header>
@@ -90,13 +103,13 @@
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images\pacotes\1.jpg" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/pacotes/1.jpg" alt="" /></a>
 										<header>
 											<h3>João Pessoa</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images\pacotes\2.jpeg" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/pacotes/2.jpeg" alt="" /></a>
 										<header>
 											<h3>Salvador</h3>
 										</header>
@@ -104,13 +117,13 @@
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images\pacotes\5.jpg" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/pacotes/5.jpg" alt="" /></a>
 										<header>
 											<h3>Rio de Janeiro</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images\pacotes\6.jpg" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/pacotes/6.jpg" alt="" /></a>
 										<header>
 											<h3>São Paulo</h3>
 										</header>
@@ -129,7 +142,7 @@
 								<h2>Sobre nós</h2>
 							</header>
 
-							<a href="#" class="image featured"><img src="images\nos.png" alt="" /></a>
+							<a href="#" class="image featured"><img src="images/nos.png" alt="" /></a>
 
 							<p>Somos uma equipe de desenvolvedores junior que estudam na <strong>Faculdade Senac - Pernambuco</strong>. 
 								Esse site foi feito com o intuito de atividade para a cadeira de Mobile.</p>
@@ -185,6 +198,37 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+			let newWorker;
+				if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./assets/pwa-build/service-worker.js').then(reg => {
+        reg.addEventListener('updatefound', () => {
+          // A wild service worker has appeared in reg.installing!
+          newWorker = reg.installing;
+          newWorker.addEventListener('statechange', () => {
+            // Has network.state changed?
+            switch (newWorker.state) {
+              case 'installed':
+                if (navigator.serviceWorker.controller) {
+                  // new update available
+                  showUpdateBar();
+                }
+                // No update available
+                break;
+            }
+          });
+        });
+      });
+      let refreshing;
+      navigator.serviceWorker.addEventListener('controllerchange', function () {
+        if (refreshing) return;
+        window.location.reload();
+        refreshing = true;
+      });
+    }
+		</script>
+			
 
 	</body>
 </html>
